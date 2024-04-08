@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roomchat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Roomchat</h1>
+    <div id="roomList"></div>
+    <button id="createRoomBtn" onclick="showCreateRoomPopup()">+</button>
+</div>
+
+<div id="popup" class="popup">
+    <h2>New Room</h2>
+    <label for="chatName">Chat Name:</label>
+    <input type="text" id="chatName" placeholder="Enter your roomchat name" required>
+    <label for="maxMembers">Max Members:</label>
+    <input type="number" id="maxMembers" min="1" required>
+    <button type="button" id=submitBtn" onclick="newroom()">Submit</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

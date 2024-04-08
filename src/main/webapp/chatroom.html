@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="indexcss.css"/>
+    <title>Roomchat</title>
+    <script src="chatroomjs.js"></script>
+</head>
+<body>
+
+<div class="popup" style="display: flex">
+    <div class="popupwindow">
+        <form>
+            <div class="verticallayout">
+                <label class="title" style="font-size: 25px">What is your name?</label>
+                <div class="horizontallayout">
+                    <label style="padding-right: 40px">My name is:</label>
+                    <input id="username" placeholder="username">
+                </div>
+                <button type="button" class="submitbut" onclick="adduser()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<label class="title" id="roomname">Name</label>
+<div class="verticallayout">
+    <div class="horizontallayout">
+        <label style="padding-right: 290px">Please enter your name</label>
+        <lable>Members online: N/A</lable>
+    </div>
+    <div class="horizontallayout">
+        <button class="blue-button" style="padding-right: 420px" onclick="changeusername()">Change name</button>
+        <button class="blue-button">Leave room</button>
+    </div>
+    <fieldset class="chatfieldset">
+        <div class="labellayoutvert">
+        </div>
+    </fieldset>
+    <div class="horizontallayout">
+    <input id="messageinput" type="text" class="messageinput">
+        <button id="sendbutton" type="button" class="sendbutton" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+</body>
+</html>

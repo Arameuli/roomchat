@@ -1,0 +1,117 @@
+/* General Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Container & Layout */
+.container {
+  width: 40%;
+  min-width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Room List Styles */
+#roomList .room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #e4e6eb;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#createRoomBtn {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+}
+
+#createRoomBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  min-width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: none; /* Initially hidden */
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+}
+
+.popup h2 {
+  color: #333;
+}
+
+.popup input[type="text"],
+.popup input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.popup button {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+}
+
+.popup button:hover {
+  background-color: #218838;
+}
+
+/* Display Flex for Popup */
+.popup.displayFlex {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .popup {
+    width: 80%;
+  }
+}
